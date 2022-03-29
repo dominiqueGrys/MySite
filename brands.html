@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dominique Grys</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+nav ul li a{
+  color: var(--light-color);
+  }
+  </style>
+
+<style>
+  #bricks{
+    position: absolute;
+      top: 0;
+      left: 0;
+
+  }
+  
+      .brick{
+        padding:15px;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:0px 15px;
+        opacity: .7;
+        background-image:url('./assets/minilogoicon.png');
+        display: inline;
+        animation-name: reverse;
+        animation-duration: 13s;
+       
+      }
+      .brick:hover{
+              animation-name: myanimation;
+              animation-duration: 0.2s;
+              animation-fill-mode: forwards;
+
+      }
+  
+          @keyframes myanimation {
+              from {
+                opacity: 0.7;
+              }
+              to {
+                opacity: 0.0;
+              }
+          }
+            
+          @keyframes reverse {
+            from {
+              
+                opacity: 0.0;
+              }
+              to {
+                opacity: 0.7;
+              }
+          }
+          body{
+          position: relative;
+    z-index: 100;
+        }
+  
+    </style>
+  
+</head>
+<body>
+ 
+<nav>
+
+  <input type="checkbox" name="" id="chk1">
+  <div class="logo">
+  <a href="./index.html"><img id="logo" src="./assets/minilogo.png"/></a>
+  </div>
+  <ul>
+  <li>
+    <span>
+      <div><a href="./brands.html" name="getbarnds">Trademark Barnds</a></div>
+      <div><a href="./art.html" name="getart">Digital Art & Scripts </a></div>   
+      <div><a href="./music.html" name="getmusic">Music Production</a></div>
+    </span>
+
+  </li>
+  <li><a  href="mailto:grysdominique@gmail.com"  class="nav_item">grysdominique@gmail.com</a></li>
+
+  </ul>
+  <div class="menu">
+  <label for="chk1">
+  <i id="bar" class="fa fa-bars"></i>
+  </label>
+  </div>
+  </nav>
+
+
+<!-- <div class="pimg1">
+  <div class="ptext">
+
+  </div>
+</div> -->
+<div id="bricks">
+
+</div>
+<script>
+
+  var matrixSize = window.innerWidth/31;
+  var imageDiv = document.getElementById("bricks");
+  var highCalc = window.innerHeight/15;
+  
+  for(var i = 0; i<highCalc; i++){
+
+      for(var j = 0; j<matrixSize; j++){
+        var d = document.createElement("div"); 
+        d.classList.add("brick");
+
+        imageDiv.appendChild(d);  
+      }
+      imageDiv.appendChild(document.createElement("br"));
+
+  }
+  
+  </script> 
+
+<div id="content">
+
+    <div class="content_item" id="home">
+
+        <section id="brandsLand" class="section section-dark pimg4">
+          <h1>Brands & Trademarks</h1>
+          <h3>A few brands from my privat collection</h3>
+        </section>
+
+
+
+        <section class="section section-light">
+          <h2>Metallicode</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+        <section class="section section-dark">
+          <h2>tAudio</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+        <section class="section section-light">
+          <h2>QuantumShaman</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+        <section class="section section-dark">
+          <h2>Biorhythmica</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+        <section class="section section-light">
+          <h2>Sultan Kabir</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+        
+        <section class="section section-dark">
+          <h2>Epic Synth Battle</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+        <section class="section section-light">
+          <h2>Mycologica</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+        
+        <section class="section section-dark">
+          <h2>Machshefizem</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+
+
+        <section class="section section-light">
+          <h2>AGDA</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+        
+        <section class="section section-dark">
+          <h2>MaPo</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+        <section class="section section-light">
+          <h2>Eclips Studios</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+        
+        <section class="section section-dark">
+          <h2>Rent A Synth</h2>
+          <p>dnvovno wvndnvwdjnvdw
+            wvndnvwdjnvdwwvwvwvwkowev qecq
+            qevqljnvq
+             evqe
+          </p>
+        </section>
+
+      </div>
+
+</div>
+
+<footer>
+  <p>Created by Dominique Grys 2022</p>
+</footer>
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/sitescript.js"></script>
+
+
+  
+</body>
+</html>
+
